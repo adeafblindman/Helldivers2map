@@ -696,7 +696,7 @@ $(window).on('load', function() {
     });
 
     // When all processing is done, hide the loader and make the map visible
-     showMap();
+    showMap();
 
     function showMap() {
       if (completePoints && completePolylines && completePolygons) {
@@ -742,7 +742,7 @@ $(window).on('load', function() {
       }
     }
 
-    // Add Google Analytics if the ID exists 
+    // Add Google Analytics if the ID exists
     var ga = getSetting('_googleAnalytics');
     console.log(ga)
     if ( ga && ga.length >= 10 ) {
@@ -928,12 +928,10 @@ $(window).on('load', function() {
   function addBaseMap() {
 
     var basemap = trySetting('_tileProvider', 'CartoDB.Positron');
+    
+    L.tileLayer.provider(basemap, {
+      maxZoom: 18,
 
-     L.tileLayer.provider(basemap, {
-   // L.tileLayer('media/map.png', {
-      maxZoom: 5,
-      continuousWorld: false,
-      noWrap: true,  
       // Pass the api key to most commonly used parameters
       apiKey: trySetting('_tileProviderApiKey', ''),
       apikey: trySetting('_tileProviderApiKey', ''),
