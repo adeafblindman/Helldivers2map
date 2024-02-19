@@ -930,7 +930,7 @@ $(window).on('load', function() {
     var basemap = trySetting('_tileProvider', 'CartoDB.Positron');
 
    //  L.tileLayer.provider(basemap, {
- L.tileLayer('media/helldiver map/-tiles/{z}_{x}_{y}.png', {
+ L.tileLayer('media/helldiver map/{z}_{x}_{y}.png', {
       maxZoom: 5,
       continuousWorld: false,
       noWrap: true,  
