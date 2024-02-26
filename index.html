@@ -89,8 +89,8 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
       draggable: true,
     }).addTo(map);
     marker.bindPopup('LatLng Marker').openPopup();
-	marker.on('dragend', function(e) {
-	marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    marker.on('dragend', function(e) {
+      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     });
 
 	  
