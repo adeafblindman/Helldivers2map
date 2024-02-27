@@ -929,9 +929,9 @@ $(window).on('load', function() {
 
     var basemap = trySetting('_tileProvider', 'CartoDB.Positron');
 
-   //  L.tileLayer.provider(basemap, {
- L.tileLayer('https://foxholestats.com/tiles/worldmap_warapi.jpg-tiles/{z}_{x}_{y}.jpg', {
-      maxZoom: 3,
+    // L.tileLayer.provider(basemap, {
+    L.tileLayer('https://foxholestats.com/tiles/worldmap_warapi.jpg-tiles/{z}_{x}_{y}.jpg', {
+      maxZoom: 5,
       continuousWorld: false,
       noWrap: true,  
       // Pass the api key to most commonly used parameters
@@ -1019,7 +1019,7 @@ $(window).on('load', function() {
               // First, read 3 sheets: Options, Points, and Polylines
               $.when(
                 $.getJSON(apiUrl + spreadsheetId + '/values/Options?key=' + googleApiKey),
-                $.getJSON(apiUrl + spreadsheetId + '/values/Points?key=' + googleApiKey),
+                $.getJSON(apiUrl + spreadsheetId + '/values/SubmitPoints?key=' + googleApiKey),
                 $.getJSON(apiUrl + spreadsheetId + '/values/Polylines?key=' + googleApiKey)
               ).done(function(options, points, polylines) {
 
