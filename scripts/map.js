@@ -5,9 +5,9 @@ $(window).on('load', function() {
   var polygonSettings = [];
   var polygonsLegend;
 
-  var completePoints = false;
-  var completePolygons = false;
-  var completePolylines = false;
+  var completePoints = true;
+  var completePolygons = true;
+  var completePolylines = true;
 
   /**
    * Returns an Awesome marker with specified parameters
