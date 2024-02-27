@@ -930,8 +930,8 @@ $(window).on('load', function() {
     var basemap = trySetting('_tileProvider', 'CartoDB.Positron');
 
    //  L.tileLayer.provider(basemap, {
- L.tileLayer('media/helldiver map/{z}_{x}_{y}.png', {
-      maxZoom: 5,
+ L.tileLayer('https://foxholestats.com/tiles/worldmap_warapi.jpg-tiles/{z}_{x}_{y}.jpg', {
+      maxZoom: 3,
       continuousWorld: false,
       noWrap: true,  
       // Pass the api key to most commonly used parameters
