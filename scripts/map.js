@@ -101,8 +101,8 @@ $(window).on('load', function() {
   function mapPoints(points, layers) {
     var markerArray = [];
     // check that map has loaded before adding points to it?
-  //  for (var i in points) {
-  //    var point = points[i];
+    for (var i in points) {
+      var point = points[i];
 
       // If icon contains '.', assume it's a path to a custom icon,
       // otherwise create a Font Awesome icon
@@ -1019,7 +1019,7 @@ $(window).on('load', function() {
               // First, read 3 sheets: Options, Points, and Polylines
               $.when(
                 $.getJSON(apiUrl + spreadsheetId + '/values/Options?key=' + googleApiKey),
-                $.getJSON(apiUrl + spreadsheetId + '/values/Points?key=' + googleApiKey),
+                $.getJSON(apiUrl + spreadsheetId + '/values/SubmitPoints?key=' + googleApiKey),
                 $.getJSON(apiUrl + spreadsheetId + '/values/Polylines?key=' + googleApiKey)
               ).done(function(options, points, polylines) {
 
