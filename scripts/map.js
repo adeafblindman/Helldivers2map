@@ -1019,7 +1019,7 @@ $(window).on('load', function() {
               // First, read 3 sheets: Options, Points, and Polylines
               $.when(
                 $.getJSON(apiUrl + spreadsheetId + '/values/Options?key=' + googleApiKey),
-                $.getJSON(apiUrl + spreadsheetId + '/values/SubmitPoints?key=' + googleApiKey),
+                $.getJSON(apiUrl + spreadsheetId + '/values/Points?key=' + googleApiKey),
                 $.getJSON(apiUrl + spreadsheetId + '/values/Polylines?key=' + googleApiKey)
               ).done(function(options, points, polylines) {
 
