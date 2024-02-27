@@ -5,9 +5,9 @@ $(window).on('load', function() {
   var polygonSettings = [];
   var polygonsLegend;
 
-  var completePoints = true;
-  var completePolygons = true;
-  var completePolylines = true;
+  var completePoints = false;
+  var completePolygons = false;
+  var completePolylines = false;
 
   /**
    * Returns an Awesome marker with specified parameters
@@ -101,8 +101,8 @@ $(window).on('load', function() {
   function mapPoints(points, layers) {
     var markerArray = [];
     // check that map has loaded before adding points to it?
-    for (var i in points) {
-      var point = points[i];
+  //  for (var i in points) {
+  //    var point = points[i];
 
       // If icon contains '.', assume it's a path to a custom icon,
       // otherwise create a Font Awesome icon
