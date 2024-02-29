@@ -4,7 +4,7 @@ Customize Leaflet maps with a linked Google Sheets template or CSV files and Geo
 ![Preview](preview.jpg)
 
 ## Live links (replace with your own)
-- Leaflet Map [https://adeafblindman.github.io/Leaflet-map-w-google-sheet/)
+- Leaflet Map [https://adeafblindman.github.io/Helldivers2map)
 - Google Sheets template https://docs.google.com/spreadsheets/d/1nZR543Dekzy_7fpX6oUgXFnQD2WTOPCdngZ14i0GtFg/edit#gid=164271551
 
 ## Create your own
