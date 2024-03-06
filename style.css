@@ -1,18 +1,5 @@
 html,
-div {
-    display:table;
-    position:relative;
-    margin:0 auto;
-}
-iframe + iframe {
-    position:absolute;
-    left:0;
-    top:0;
-    right:0;
-    bottom:0;
-    margin:auto;
-    pointer-events:none
-}
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -301,4 +288,18 @@ span.legend-icon {
 
 .ladder form, .ladder div {
   display: block;
+}
+div {
+    display:table;
+    position:relative;
+    margin:0 auto;
+}
+iframe + iframe {
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    pointer-events:none
 }
