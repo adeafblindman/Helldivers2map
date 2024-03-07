@@ -295,7 +295,7 @@ div {
     margin:0 auto;
 }
 iframe + iframe {
-    position:absolute;
+    position:left;
     left:0;
     top:0;
     right:0;
