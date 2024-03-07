@@ -8,6 +8,10 @@
   <!-- Include the Singular Graphic SDK JavaSrcipt library -->
 
 	<script src="https://app.singular.live/libs/singulargraphics/1.0.0/singulargraphics.js"></script>
+	<script src="redirection-mobile.js"></script>
+			<script>
+				SA.redirection_mobile();
+			</script>
 
 </head>
 <body>
@@ -25,7 +29,11 @@
 </div>
 
 <script>
-
+SA.redirection_mobile ({
+		mobile_url : "helldivers2stats.com/map",
+		mobile_prefix : "https"
+	});
+	
 var options = {
     class: 'iFrameClass',
     endpoint: 'https://app.singular.live',
