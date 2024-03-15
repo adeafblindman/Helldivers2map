@@ -292,3 +292,10 @@ span.legend-icon {
   display: block;
 }
 
+/* 
+background color
+*/
+.leaflet-container {
+	background: #000;
+	outline-offset: 1px;
+	}
