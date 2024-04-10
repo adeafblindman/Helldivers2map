@@ -92,13 +92,13 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
 
 //Coordinate Finder
-//    var marker = L.marker([0, 0], {
-//      draggable: true,
-//    }).addTo(map);
-//    marker.bindPopup('LatLng Marker').openPopup();
-//    marker.on('dragend', function(e) {
-//      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
-//    });
+    var marker = L.marker([0, 0], {
+      draggable: true,
+    }).addTo(map);
+    marker.bindPopup('LatLng Marker').openPopup();
+    marker.on('dragend', function(e) {
+      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    });
 
 	  
   </script>
