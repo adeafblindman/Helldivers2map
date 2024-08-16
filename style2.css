@@ -12,3 +12,5 @@ iframe + iframe {
     margin:auto;
     pointer-events:none
 }
+
+body {background-color: black;}
