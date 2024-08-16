@@ -296,6 +296,7 @@ span.legend-icon {
 background color
 */
 .leaflet-container {
-	background: #000;
+	background: black;
 	outline-offset: 1px;
 	}
+body {background-color: black;}
