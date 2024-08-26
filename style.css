@@ -301,3 +301,9 @@ background color
 	outline-offset: 1px;
 	}
 body {background-color: black;}
+/* 
+table colors
+*/
+table, th, td {
+  border: 1px solid black;
+}
