@@ -307,3 +307,6 @@ table colors
 table, th, td {
   border: 1px solid black;
 }
+th {
+  text-align: center;
+}
