@@ -2,7 +2,7 @@
 div {
     display:table;
     position:relative;
-    margin:0 auto;
+    margin:0;
 }
 iframe + iframe {
     position:absolute;
